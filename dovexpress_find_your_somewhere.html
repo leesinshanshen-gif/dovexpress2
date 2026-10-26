@@ -1,0 +1,625 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102b32">
+  <meta name="description" content="Find your next favorite place with DovExpress. Explore local, domestic, and international tours, let us place you somewhere unforgettable, and complete your booking with our integrated payment system.">
+  <title>DovExpress — Find your somewhere</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="nav-wrap">
+      <a class="brand" href="#home" aria-label="DovExpress home"><span class="brand-mark">d</span><span>Dov<span class="brand-light">Express</span></span></a>
+      <input class="nav-check" type="checkbox" id="nav-check" aria-label="Toggle navigation">
+      <label class="nav-toggle" for="nav-check" aria-hidden="true"><span></span><span></span><span></span></label>
+      <nav class="main-nav" aria-label="Main navigation">
+        <a href="#tours">Explore</a>
+        <a href="#booking">Booking &amp; Pay</a>
+        <a href="#services">Travel services</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+        <a class="nav-cta" href="#booking" id="nav-plan-cta">Plan a trip <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" role="img" aria-label="Sunrise over a tropical coastline"></div>
+      <div class="hero-content">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEXT CHAPTER STARTS HERE</p>
+        <h1>Find your<br><em>somewhere.</em></h1>
+        <p class="hero-copy">Thoughtful trips, unforgettable places, and the little details that make a journey feel like yours. Make a trip and let us place you somewhere extraordinary.</p>
+        <div class="hero-actions">
+          <a class="button button-yellow" href="#tours">Explore our tours <span>↗</span></a>
+          <button type="button" class="button button-outline-light" id="hero-surprise-btn">Make a trip &amp; place me somewhere <span>✦</span></button>
+        </div>
+      </div>
+      <div class="hero-note"><span class="note-dot"></span> Good journeys begin with a little curiosity.</div>
+      <div class="hero-index">01 <span></span> 05</div>
+    </section>
+
+    <section class="intro section-pad" id="tours">
+      <div class="section-topline"><span>01 / TOUR PACKAGES</span><span>Made for the way you travel</span></div>
+      <div class="intro-heading">
+        <h2>Go a little<br><em>further.</em></h2>
+        <p>From a free afternoon in the city to a faraway escape, there’s a good story waiting around the corner. Pick a pace, choose a place, and let’s make it happen.</p>
+      </div>
+      <div class="tour-grid">
+        <a class="tour-card tour-city" href="#local-tours" data-tour-category="local">
+          <span class="tour-number">01</span><span class="tour-arrow">↗</span>
+          <div class="tour-caption"><span>NEARBY DISCOVERIES</span><h3>Local city tours</h3><p>See your city with fresh eyes. From ₱3,200 / guest</p></div>
+        </a>
+        <a class="tour-card tour-domestic" href="#domestic-tours" data-tour-category="domestic">
+          <span class="tour-number">02</span><span class="tour-arrow">↗</span>
+          <div class="tour-caption"><span>ISLANDS &amp; HIDEAWAYS</span><h3>Domestic tours</h3><p>Find your own slice of paradise. From ₱12,800 / guest</p></div>
+        </a>
+        <a class="tour-card tour-international" href="#international-tours" data-tour-category="international">
+          <span class="tour-number">03</span><span class="tour-arrow">↗</span>
+          <div class="tour-caption"><span>BEYOND THE ORDINARY</span><h3>International tours</h3><p>New cultures. New perspectives. From ₱46,500 / guest</p></div>
+        </a>
+      </div>
+    </section>
+
+    <section class="trip-list section-pad" aria-label="Tour categories">
+      <div class="trip-column" id="local-tours"><span class="mini-label">A CLOSER LOOK</span><h3>Local city tours</h3><p>Uncover the character, flavor, and hidden corners of the places around you — Intramuros, Antipolo ridges, and Binondo food trails.</p><a href="#booking" data-place-category="local">Place me on a local tour <span>↗</span></a></div>
+      <div class="trip-column" id="domestic-tours"><span class="mini-label">A CHANGE OF SCENERY</span><h3>Domestic tours</h3><p>Make room for mountain mornings, coastal afternoons, and island time across El Nido, Batanes, and Siargao.</p><a href="#booking" data-place-category="domestic">Place me on a domestic tour <span>↗</span></a></div>
+      <div class="trip-column" id="international-tours"><span class="mini-label">A WORLD OF POSSIBILITIES</span><h3>International tours</h3><p>Take the long way around and come home with a new point of view in Kyoto, the Amalfi Coast, or the Swiss Alps.</p><a href="#booking" data-place-category="international">Place me on an international tour <span>↗</span></a></div>
+    </section>
+
+    <section class="booking section-pad" id="booking">
+      <div class="booking-top-grid">
+        <div class="booking-copy">
+          <div class="section-topline light"><span>02 / BOOKING &amp; PAYMENT</span><span>Simple from the start</span></div>
+          <p class="eyebrow">YOUR TRIP, YOUR WAY</p>
+          <h2>Let’s get<br><em>you there.</em></h2>
+          <p>Make a trip below — let DovExpress place you somewhere matched to your vibe or handpick your destination, customize your add-ons, and complete your reservation with our instant payment system.</p>
+          <button type="button" class="button button-yellow" id="book-a-trip-cta">Book a trip <span>↗</span></button>
+        </div>
+        <div class="booking-details">
+          <article class="detail-row active-step-row" id="step-row-1" data-step-target="1"><span class="detail-no">01</span><div><h3>Book a trip &amp; get placed</h3><p>Choose your vibe or category and let us place you somewhere unforgettable with a custom itinerary.</p></div><span class="detail-icon">↗</span></article>
+          <article class="detail-row" id="step-row-2" data-step-target="2"><span class="detail-no">02</span><div><h3>Payment instructions &amp; checkout</h3><p>Review your instant live quote, add an optional guide tip, and pay securely via Card, GCash/Maya, or Bank.</p></div><span class="detail-icon">↗</span></article>
+          <article class="detail-row" id="step-row-3" data-step-target="3"><span class="detail-no">03</span><div><h3>Booking status &amp; boarding pass</h3><p>View your confirmed placement map, digital boarding pass, payment receipt, and live reservation status.</p></div><span class="detail-icon">↗</span></article>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE TRIP PLACEMENT & PAYMENT STUDIO -->
+      <div class="trip-studio" id="trip-studio">
+        <div class="studio-tabs" role="tablist" aria-label="Trip booking and payment steps">
+          <button type="button" class="studio-tab active" id="tab-btn-1" data-tab="1">
+            <span class="studio-tab-num">STEP 01</span>
+            <span>
+              <strong class="studio-tab-title">Make a Trip &amp; Place Me</strong>
+              <small class="studio-tab-sub">Match a destination &amp; itinerary</small>
+            </span>
+          </button>
+          <button type="button" class="studio-tab" id="tab-btn-2" data-tab="2">
+            <span class="studio-tab-num">STEP 02</span>
+            <span>
+              <strong class="studio-tab-title">Payment System</strong>
+              <small class="studio-tab-sub">Card, E-Wallet, Bank &amp; Guide Tip</small>
+            </span>
+          </button>
+          <button type="button" class="studio-tab" id="tab-btn-3" data-tab="3">
+            <span class="studio-tab-num">STEP 03</span>
+            <span>
+              <strong class="studio-tab-title">Booking Status &amp; Ticket</strong>
+              <small class="studio-tab-sub" id="tab-status-sub">1 active placement ready</small>
+            </span>
+          </button>
+        </div>
+
+        <!-- PANEL 1: MAKE A TRIP & PLACE ME SOMEWHERE -->
+        <div class="studio-panel active" id="studio-panel-1">
+          <div class="planner-grid">
+            <div class="planner-form-card">
+              <span class="interactive-badge">✦ DESTINATION MATCHMAKER</span>
+              <h3>Make Your Trip</h3>
+              <p class="planner-sub">Tell us how you want to travel. When you make a trip, we’ll place you somewhere tailored to your preferences.</p>
+
+              <div class="mode-switch" role="group" aria-label="Placement mode">
+                <button type="button" class="mode-btn active" id="mode-surprise-btn" data-mode="surprise">✦ Surprise Me (Place Me)</button>
+                <button type="button" class="mode-btn" id="mode-manual-btn" data-mode="manual">⌖ Pick Specific Place</button>
+              </div>
+
+              <div class="field-group" id="surprise-controls">
+                <label class="field-label" for="trip-scope">Tour Scope</label>
+                <select class="field-select" id="trip-scope">
+                  <option value="all">Anywhere (Local, Domestic &amp; International)</option>
+                  <option value="local">01 / Local City Tours (Nearby Discoveries)</option>
+                  <option value="domestic">02 / Domestic Tours (Islands &amp; Hideaways)</option>
+                  <option value="international">03 / International Tours (Beyond the Ordinary)</option>
+                </select>
+                <div style="margin-top: 14px;">
+                  <span class="field-label">Travel Vibe</span>
+                  <div class="vibe-chips" id="vibe-chip-group">
+                    <button type="button" class="vibe-chip active" data-vibe="all">Any Vibe</button>
+                    <button type="button" class="vibe-chip" data-vibe="coastal">Coastal &amp; Island</button>
+                    <button type="button" class="vibe-chip" data-vibe="culture">Heritage &amp; Culture</button>
+                    <button type="button" class="vibe-chip" data-vibe="mountain">Highlands &amp; Nature</button>
+                    <button type="button" class="vibe-chip" data-vibe="culinary">Food &amp; Nightlife</button>
+                  </div>
+                </div>
+              </div>
+
+              <div class="field-group" id="manual-controls" style="display:none;">
+                <label class="field-label" for="manual-destination">Select Your Destination</label>
+                <select class="field-select" id="manual-destination"></select>
+              </div>
+
+              <div class="field-row-2">
+                <div class="field-group">
+                  <label class="field-label" for="trip-date">Departure Date</label>
+                  <input type="date" class="field-input" id="trip-date" value="2026-11-15">
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="trip-days">Duration</label>
+                  <select class="field-select" id="trip-days">
+                    <option value="3" selected>3 Days / 2 Nights</option>
+                    <option value="5">5 Days / 4 Nights</option>
+                    <option value="7">7 Days / 6 Nights</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-row-2">
+                <div class="field-group">
+                  <label class="field-label" for="trip-guests">Travelers</label>
+                  <select class="field-select" id="trip-guests">
+                    <option value="1">1 Solo Traveler</option>
+                    <option value="2" selected>2 Travelers (Couple / Duo)</option>
+                    <option value="4">4 Travelers (Small Group)</option>
+                    <option value="6">6 Travelers (Family Pack)</option>
+                  </select>
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="trip-pace">Travel Style</label>
+                  <select class="field-select" id="trip-pace">
+                    <option value="standard" selected>Signature Curated (1x)</option>
+                    <option value="relaxed">Relaxed Essential (0.85x)</option>
+                    <option value="luxe">Private Luxe First (1.35x)</option>
+                  </select>
+                </div>
+              </div>
+
+              <div class="field-group">
+                <span class="field-label">Travel Services Add-Ons</span>
+                <div class="addon-checks">
+                  <label class="addon-item">
+                    <span><input type="checkbox" id="addon-hotel" checked> ⌂ Boutique Hotel Reservations</span>
+                    <span class="addon-price">+₱4,200</span>
+                  </label>
+                  <label class="addon-item">
+                    <span><input type="checkbox" id="addon-assist"> ✳ 24/7 Travel Assistance &amp; Insurance</span>
+                    <span class="addon-price">+₱1,600</span>
+                  </label>
+                  <label class="addon-item">
+                    <span><input type="checkbox" id="addon-transport"> ⌁ Private Scenic Transport Rentals</span>
+                    <span class="addon-price">+₱2,800</span>
+                  </label>
+                </div>
+              </div>
+
+              <button type="button" class="place-me-btn" id="make-trip-btn">
+                <span>✦ Make Trip &amp; Place Me Somewhere</span>
+              </button>
+            </div>
+
+            <!-- RIGHT COLUMN: LIVE PLACEMENT MAP & DESTINATION CARD -->
+            <div class="placement-card" id="placement-result-card">
+              <div class="placement-map-box">
+                <div class="map-overlay-pill" id="map-status-label">⌖ PLACED IN: EL NIDO, PALAWAN</div>
+                <svg class="placement-svg" viewBox="0 0 600 225" aria-label="Destination placement map">
+                  <defs>
+                    <pattern id="grid-pat" width="30" height="30" patternUnits="userSpaceOnUse">
+                      <path d="M 30 0 L 0 0 0 30" fill="none" stroke="rgba(255,255,255,0.06)" stroke-width="1"/>
+                    </pattern>
+                  </defs>
+                  <rect width="600" height="225" fill="url(#grid-pat)"/>
+                  <!-- Stylized Landmasses -->
+                  <path d="M55,65 Q95,45 135,72 T205,90 T250,150 L185,175 L95,145 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+                  <path d="M275,45 Q335,35 395,68 T465,115 T530,90 L555,155 L435,190 L315,165 Z" fill="rgba(255,255,255,0.08)" stroke="rgba(255,255,255,0.16)"/>
+                  <path d="M460,40 Q515,30 560,65 L540,115 L475,95 Z" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.14)"/>
+                  <!-- Origin Marker (Manila / Antipolo Hub) -->
+                  <circle cx="340" cy="135" r="5" fill="#fff"/>
+                  <text x="340" y="154" fill="rgba(255,255,255,0.65)" font-size="10" text-anchor="middle" font-family="sans-serif">ORIGIN (MNL)</text>
+                  <!-- Dynamic Flight Arc -->
+                  <path id="map-flight-arc" d="M340,135 Q280,65 235,120" fill="none" stroke="#f1ce65" stroke-width="2.2" stroke-dasharray="5,4"/>
+                  <!-- Destination Pulse Pin -->
+                  <circle id="map-pin-outer" cx="235" cy="120" r="14" fill="rgba(241,206,101,0.25)"/>
+                  <circle id="map-pin-inner" cx="235" cy="120" r="6" fill="#f1ce65" stroke="#102b32" stroke-width="2"/>
+                  <text id="map-pin-label" x="235" y="98" fill="#f1ce65" font-size="11" font-weight="bold" text-anchor="middle" font-family="sans-serif">EL NIDO</text>
+                </svg>
+                <div class="map-coords-pill" id="map-coords-text">11.1956° N, 119.4169° E • 1h 25m flight</div>
+              </div>
+
+              <div class="placement-hero" id="placement-hero-bg" style="background-image: url('https://images.unsplash.com/photo-1510414842594-a61c69b5ae57?auto=format&fit=crop&w=900&q=80');">
+                <div class="placement-hero-content">
+                  <span class="placed-tag" id="placed-category-badge">02 / DOMESTIC TOUR • ISLAND HIDEAWAY</span>
+                  <h3 id="placed-title">El Nido Limestone &amp; Lagoon Hideaway</h3>
+                  <div class="placement-meta">
+                    <span id="placed-region">📍 Palawan, Philippines</span>
+                    <span id="placed-weather">☀ 29°C Tropical Breeze</span>
+                    <span id="placed-code">✈ Airport: ENI</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="placement-body">
+                <p class="placement-desc" id="placed-desc">Towering marble karst cliffs, hidden emerald lagoons, and private sunset paraw sailing tailored to your pace.</p>
+                <div class="itinerary-list" id="placed-itinerary"></div>
+
+                <div class="placement-footer">
+                  <div class="price-preview-box">
+                    <small>ESTIMATED TRIP TOTAL (<span id="preview-guest-count">2 Guests, 3 Days</span>)</small>
+                    <strong id="placed-total-preview">₱34,000</strong>
+                  </div>
+                  <div class="placement-actions">
+                    <button type="button" class="btn-secondary-dark" id="reroll-place-btn">↻ Place Me Elsewhere</button>
+                    <button type="button" class="button button-yellow" id="proceed-to-pay-btn">Proceed to Payment <span>↗</span></button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 2: PAYMENT SYSTEM -->
+        <div class="studio-panel" id="studio-panel-2">
+          <div class="payment-grid">
+            <div class="planner-form-card">
+              <span class="interactive-badge">🔒 SECURE DOVEXPRESS CHECKOUT</span>
+              <h3>Complete Your Payment</h3>
+              <p class="planner-sub">Choose your preferred payment method, customize any optional tour guide tip, and lock in your placement.</p>
+
+              <div class="pay-methods-tabs" role="tablist" aria-label="Payment method">
+                <button type="button" class="pay-method-btn active" data-pay-method="card">💳 Credit / Debit Card</button>
+                <button type="button" class="pay-method-btn" data-pay-method="ewallet">📱 GCash / Maya QR</button>
+                <button type="button" class="pay-method-btn" data-pay-method="bank">🏦 Bank Transfer</button>
+              </div>
+
+              <!-- Traveler Contact Info -->
+              <div class="field-row-2">
+                <div class="field-group">
+                  <label class="field-label" for="payer-name">Lead Traveler Full Name</label>
+                  <input type="text" class="field-input" id="payer-name" value="Alex Rivera" placeholder="Full Name">
+                </div>
+                <div class="field-group">
+                  <label class="field-label" for="payer-email">Email for E-Ticket &amp; Receipt</label>
+                  <input type="email" class="field-input" id="payer-email" value="alex.rivera@example.com" placeholder="you@example.com">
+                </div>
+              </div>
+
+              <!-- Credit Card Box -->
+              <div id="pay-box-card">
+                <div class="credit-card-visual">
+                  <div class="cc-top">
+                    <div class="cc-chip"></div>
+                    <span id="cc-brand-label">VISA SIGNATURE • DOVEXPRESS</span>
+                  </div>
+                  <div class="cc-number-display" id="cc-preview-num">4532 •••• •••• 8891</div>
+                  <div class="cc-bottom">
+                    <div><small style="display:block;font-size:0.55rem;opacity:0.6;">CARDHOLDER</small><strong id="cc-preview-name">ALEX RIVERA</strong></div>
+                    <div><small style="display:block;font-size:0.55rem;opacity:0.6;">EXPIRES</small><strong id="cc-preview-exp">08/29</strong></div>
+                  </div>
+                </div>
+
+                <div class="field-group">
+                  <label class="field-label" for="cc-number">Card Number</label>
+                  <input type="text" class="field-input" id="cc-number" maxlength="19" value="4532 8910 2341 8891" placeholder="4532 0000 0000 0000">
+                </div>
+                <div class="field-row-2">
+                  <div class="field-group">
+                    <label class="field-label" for="cc-expiry">Expiry Date (MM/YY)</label>
+                    <input type="text" class="field-input" id="cc-expiry" maxlength="5" value="08/29" placeholder="MM/YY">
+                  </div>
+                  <div class="field-group">
+                    <label class="field-label" for="cc-cvv">Security Code (CVV)</label>
+                    <input type="password" class="field-input" id="cc-cvv" maxlength="4" value="842" placeholder="123">
+                  </div>
+                </div>
+              </div>
+
+              <!-- E-Wallet Box -->
+              <div id="pay-box-ewallet" style="display:none;">
+                <div class="ewallet-box">
+                  <div class="field-row-2">
+                    <div class="field-group">
+                      <label class="field-label" for="ewallet-provider">Select Wallet</label>
+                      <select class="field-select" id="ewallet-provider">
+                        <option value="GCash">GCash Express Checkout</option>
+                        <option value="Maya">Maya Wallet / QR Ph</option>
+                        <option value="PayPal">PayPal International</option>
+                      </select>
+                    </div>
+                    <div class="field-group">
+                      <label class="field-label" for="ewallet-phone">Linked Mobile Number</label>
+                      <input type="tel" class="field-input" id="ewallet-phone" value="+63 917 555 0192">
+                    </div>
+                  </div>
+                  <div class="qr-placeholder" aria-label="QR Ph Payment Code">
+                    <svg viewBox="0 0 100 100" width="110" height="110">
+                      <rect x="8" y="8" width="26" height="26" fill="none" stroke="#102b32" stroke-width="6"/>
+                      <rect x="16" y="16" width="10" height="10" fill="#102b32"/>
+                      <rect x="66" y="8" width="26" height="26" fill="none" stroke="#102b32" stroke-width="6"/>
+                      <rect x="74" y="16" width="10" height="10" fill="#102b32"/>
+                      <rect x="8" y="66" width="26" height="26" fill="none" stroke="#102b32" stroke-width="6"/>
+                      <rect x="16" y="74" width="10" height="10" fill="#102b32"/>
+                      <rect x="44" y="12" width="12" height="12" fill="#102b32"/>
+                      <rect x="44" y="36" width="18" height="18" fill="#102b32"/>
+                      <rect x="14" y="44" width="16" height="10" fill="#102b32"/>
+                      <rect x="68" y="46" width="22" height="14" fill="#102b32"/>
+                      <rect x="44" y="68" width="20" height="22" fill="#102b32"/>
+                      <rect x="72" y="72" width="18" height="18" fill="#aa8a3f"/>
+                    </svg>
+                  </div>
+                  <p style="text-align:center;font-size:0.75rem;color:rgba(255,255,255,0.75);margin:0;">Scan QR Ph or click confirm below to authorize via your linked wallet.</p>
+                </div>
+              </div>
+
+              <!-- Bank Transfer Box -->
+              <div id="pay-box-bank" style="display:none;">
+                <div class="bank-box">
+                  <div class="field-group">
+                    <label class="field-label" for="bank-name">Preferred Partner Bank</label>
+                    <select class="field-select" id="bank-name">
+                      <option value="BPI Direct">Bank of the Philippine Islands (BPI)</option>
+                      <option value="BDO Unibank">BDO Unibank Online</option>
+                      <option value="UnionBank">UnionBank Instant InstaPay</option>
+                    </select>
+                  </div>
+                  <div class="field-group" style="margin-bottom:0;">
+                    <label class="field-label" for="bank-ref">Account Holder / Reference Note</label>
+                    <input type="text" class="field-input" id="bank-ref" value="DOVEXPRESS-TRIP-PAYMENT">
+                  </div>
+                </div>
+              </div>
+
+              <!-- Optional Guide & Crew Tip Selector -->
+              <div class="field-group" style="margin-top: 16px;">
+                <span class="field-label">Optional Tour Guide &amp; Local Crew Tip (Places You w/ Priority Host)</span>
+                <div class="tip-selector" id="tip-selector-group">
+                  <button type="button" class="tip-btn" data-tip-pct="0">No Tip</button>
+                  <button type="button" class="tip-btn active" data-tip-pct="5">5% Tip</button>
+                  <button type="button" class="tip-btn" data-tip-pct="10">10% Tip</button>
+                  <button type="button" class="tip-btn" data-tip-pct="15">15% Tip</button>
+                  <button type="button" class="tip-btn" data-tip-pct="custom">Custom</button>
+                </div>
+                <div id="custom-tip-wrap" style="display:none;margin-top:10px;">
+                  <label class="field-label" for="custom-tip-input">Custom Tip Amount (PHP ₱)</label>
+                  <input type="number" class="field-input" id="custom-tip-input" min="0" step="100" value="1000">
+                </div>
+              </div>
+
+              <!-- Payment Schedule -->
+              <div class="field-group">
+                <label class="field-label" for="payment-plan">Payment Schedule</label>
+                <select class="field-select" id="payment-plan">
+                  <option value="full" selected>Pay 100% Full Amount Now</option>
+                  <option value="deposit">Pay 30% Reservation Deposit Now (Balance 14 days before trip)</option>
+                </select>
+              </div>
+
+              <button type="button" class="place-me-btn" id="submit-payment-btn">
+                <span id="submit-payment-text">🔒 Authorize Payment &amp; Issue Boarding Pass</span>
+              </button>
+            </div>
+
+            <!-- RIGHT COLUMN: LIVE QUOTE & ORDER BREAKDOWN -->
+            <div class="summary-box">
+              <div class="summary-header">
+                <div>
+                  <span class="mini-label" style="color:var(--yellow);">LIVE TRIP QUOTE</span>
+                  <h3 style="font:600 1.35rem var(--serif);margin:4px 0 0;color:#fff;" id="sum-dest-name">El Nido Limestone &amp; Lagoon Hideaway</h3>
+                </div>
+                <button type="button" class="currency-toggle" id="currency-toggle-btn">Currency: PHP (₱)</button>
+              </div>
+
+              <div class="summary-line">
+                <span>Assigned Placement</span>
+                <strong id="sum-region">Palawan, Philippines (ENI)</strong>
+              </div>
+              <div class="summary-line">
+                <span>Departure &amp; Duration</span>
+                <strong id="sum-dates">2026-11-15 • 3 Days</strong>
+              </div>
+              <div class="summary-line">
+                <span>Travelers &amp; Pace</span>
+                <strong id="sum-guests">2 Guests • Signature Curated</strong>
+              </div>
+              <div class="summary-line" style="padding-top:10px;border-top:1px solid rgba(255,255,255,0.1);">
+                <span>Base Tour Package</span>
+                <strong id="sum-base-cost">₱25,600</strong>
+              </div>
+              <div class="summary-line">
+                <span>Selected Travel Services (03)</span>
+                <strong id="sum-addons-cost">₱4,200</strong>
+              </div>
+              <div class="summary-line">
+                <span>Local Guide &amp; Crew Tip</span>
+                <strong id="sum-tip-cost">₱1,490</strong>
+              </div>
+              <div class="summary-line" id="sum-discount-row" style="display:none;color:#81c784;">
+                <span>Promo Discount (<span id="sum-promo-code-label">DOVWELCOME10</span>)</span>
+                <strong id="sum-discount-amount">-₱2,980</strong>
+              </div>
+              <div class="summary-line">
+                <span>Taxes &amp; Port/Conservation Fees (8%)</span>
+                <strong id="sum-tax-cost">₱2,384</strong>
+              </div>
+
+              <div class="summary-total">
+                <div>
+                  <span style="display:block;font-size:0.7rem;color:rgba(255,255,255,0.6);" id="sum-due-label">TOTAL AMOUNT DUE NOW</span>
+                  <small style="font-size:0.68rem;color:var(--yellow);" id="sum-per-person-label">₱16,837 per traveler</small>
+                </div>
+                <strong id="sum-grand-total">₱33,674</strong>
+              </div>
+
+              <div style="margin-top:20px;padding-top:16px;border-top:1px solid rgba(255,255,255,0.12);">
+                <label class="field-label" for="promo-input">Have a Promo or Gift Code?</label>
+                <div class="promo-row">
+                  <input type="text" class="field-input" id="promo-input" placeholder="Enter code (e.g. DOVWELCOME10)">
+                  <button type="button" class="btn-secondary-dark" id="apply-promo-btn">Apply</button>
+                </div>
+                <div class="promo-chips">
+                  <button type="button" class="promo-chip" data-promo="DOVWELCOME10">Use DOVWELCOME10 (10% Off)</button>
+                  <button type="button" class="promo-chip" data-promo="SOMEWHERE1500">Use SOMEWHERE1500 (₱1,500 Off)</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- PANEL 3: BOOKING STATUS, BOARDING PASS & RECEIPT -->
+        <div class="studio-panel" id="studio-panel-3">
+          <div class="boarding-pass" id="boarding-pass-card">
+            <div class="bp-header">
+              <div>
+                <span style="font-size:0.65rem;letter-spacing:0.15em;color:var(--yellow);display:block;">DOVEXPRESS OFFICIAL PLACEMENT &amp; BOARDING PASS</span>
+                <strong style="font:600 1.35rem var(--serif);" id="bp-dest-title">El Nido Limestone &amp; Lagoon Hideaway</strong>
+              </div>
+              <div style="display:flex;align-items:center;gap:12px;">
+                <span class="bp-status-badge" id="bp-status-pill">✓ CONFIRMED &amp; PAID</span>
+                <strong style="font-family:monospace;font-size:0.95rem;color:var(--yellow);" id="bp-ref-code">REF: DOV-8492</strong>
+              </div>
+            </div>
+
+            <div class="bp-body">
+              <div>
+                <div class="bp-route">
+                  <div>
+                    <div class="bp-code">MNL</div>
+                    <div class="bp-city">Manila / Antipolo Hub</div>
+                  </div>
+                  <div class="bp-flight-line">
+                    <div>✈ DIRECT DOVEXPRESS PLACEMENT longrightarrow</div>
+                    <small id="bp-flight-meta">1h 25m • Gate B4 • Priority Boarding</small>
+                  </div>
+                  <div style="text-align:right;">
+                    <div class="bp-code" id="bp-airport-code">ENI</div>
+                    <div class="bp-city" id="bp-city-label">Palawan, Philippines</div>
+                  </div>
+                </div>
+
+                <div class="bp-info-grid">
+                  <div class="bp-info-cell">
+                    <small>Lead Traveler</small>
+                    <strong id="bp-traveler-name">Alex Rivera</strong>
+                  </div>
+                  <div class="bp-info-cell">
+                    <small>Departure Date</small>
+                    <strong id="bp-departure-date">2026-11-15</strong>
+                  </div>
+                  <div class="bp-info-cell">
+                    <small>Party &amp; Duration</small>
+                    <strong id="bp-party-info">2 Guests • 3 Days</strong>
+                  </div>
+                  <div class="bp-info-cell">
+                    <small>Included Services</small>
+                    <strong id="bp-services-info">Boutique Hotel Stay</strong>
+                  </div>
+                  <div class="bp-info-cell">
+                    <small>Local Host &amp; Tip</small>
+                    <strong id="bp-tip-info">Priority Host (5% Tip Included)</strong>
+                  </div>
+                  <div class="bp-info-cell">
+                    <small>Coordinates Placed</small>
+                    <strong id="bp-coords-info">11.1956° N, 119.4169° E</strong>
+                  </div>
+                </div>
+              </div>
+
+              <div class="bp-receipt-box">
+                <div>
+                  <span class="mini-label">PAYMENT RECEIPT</span>
+                  <h4 style="margin:4px 0 10px;font:600 1.1rem var(--serif);">Official Settlement</h4>
+                  <div style="font-size:0.78rem;display:grid;gap:6px;color:var(--ink-soft);">
+                    <div style="display:flex;justify-content:space-between;"><span>Method:</span><strong id="bp-pay-method">Visa •••• 8891</strong></div>
+                    <div style="display:flex;justify-content:space-between;"><span>Schedule:</span><strong id="bp-pay-plan">100% Full Payment</strong></div>
+                    <div style="display:flex;justify-content:space-between;"><span>Amount Paid:</span><strong id="bp-amount-paid" style="color:var(--ink);font-size:0.95rem;">₱33,674</strong></div>
+                  </div>
+                </div>
+                <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+                  <button type="button" class="button button-yellow" id="print-pass-btn" style="min-width:auto;padding:10px 14px;font-size:0.72rem;">Print / Save PDF <span>↗</span></button>
+                  <button type="button" class="btn-secondary-dark" id="copy-ref-btn" style="background:var(--ink);color:#fff;padding:10px 14px;font-size:0.72rem;">Copy Ref Code</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Lookup / Saved Bookings History -->
+          <div class="planner-form-card">
+            <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:14px;">
+              <div>
+                <h3 style="margin:0;font-size:1.2rem;">My Placed Trips &amp; Reservation Lookup</h3>
+                <p class="planner-sub" style="margin:2px 0 0;">Click any booking below to view its boarding pass or plan another trip.</p>
+              </div>
+              <button type="button" class="btn-secondary-dark" id="plan-another-trip-btn">+ Make Another Trip</button>
+            </div>
+            <div id="saved-bookings-list" style="display:grid;gap:10px;"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services section-pad" id="services">
+      <div class="section-topline"><span>03 / TRAVEL SERVICES</span><span>We’ve got the details covered — click any service to add it to your trip</span></div>
+      <div class="services-heading"><h2>More than<br><em>the journey.</em></h2><p>A little help along the way can make all the difference. Click the services below to toggle them directly in your trip quote.</p></div>
+      <div class="service-grid">
+        <article class="service-card selected-service" id="service-card-hotel" data-addon-target="addon-hotel"><span class="service-symbol">⌂</span><span class="mini-label">STAY SOMEWHERE LOVELY</span><h3>Hotel reservations</h3><p>Find a comfortable place to land, from city stays to quiet retreats.</p><span class="service-toggle-pill">✓ Added to Trip (+₱4,200)</span></article>
+        <article class="service-card" id="service-card-assist" data-addon-target="addon-assist"><span class="service-symbol">✳</span><span class="mini-label">HERE WHEN YOU NEED US</span><h3>Travel assistance</h3><p>Get a hand with the questions and details that come up before you go.</p><span class="service-toggle-pill">+ Add to Trip (+₱1,600)</span></article>
+        <article class="service-card" id="service-card-transport" data-addon-target="addon-transport"><span class="service-symbol">⌁</span><span class="mini-label">TAKE THE SCENIC ROUTE</span><h3>Transport rentals</h3><p>Make getting around part of the adventure with transport options for your trip.</p><span class="service-toggle-pill">+ Add to Trip (+₱2,800)</span></article>
+      </div>
+    </section>
+
+    <section class="about section-pad" id="about">
+      <div class="about-image" role="img" aria-label="Traveler looking out at a mountain landscape"></div>
+      <div class="about-copy"><div class="section-topline"><span>04 / ABOUT DOVEXPRESS</span></div><p class="eyebrow">A LITTLE ABOUT US</p><h2>Travel should<br>feel like <em>you.</em></h2><p>DovExpress is here to help make travel feel more personal. We believe the best trips leave space for discovery and bring you closer to the people and places you came to see.</p><div class="about-links"><a href="#profile">Agency profile <span>↗</span></a><a href="#mission">Mission &amp; vision <span>↗</span></a><a href="#team">Our team <span>↗</span></a></div></div>
+    </section>
+    <section class="about-more section-pad">
+      <article id="profile"><span class="mini-label">WHO WE ARE</span><h3>Agency profile</h3><p>A travel company built around good planning, a personal touch, and the belief that every journey can be meaningful.</p></article>
+      <article id="mission"><span class="mini-label">WHAT GUIDES US</span><h3>Mission &amp; vision</h3><p>Our mission is to make discovering the world feel welcoming, thoughtful, and within reach.</p></article>
+      <article id="team" class="team-roster">
+        <div class="team-heading"><span class="mini-label">THE PEOPLE BEHIND DOVEXPRESS</span><h3>Meet Our Team</h3><p>We are the team behind DovExpress, working together to bring ideas to life and help make every journey feel special.</p></div>
+        <div class="team-roster-grid">
+          <div class="team-member"><span class="team-number">TEAM MEMBER 01</span><h4>Celiz, Stephen Andrew, A.</h4><p>DovExpress Team</p></div>
+          <div class="team-member"><span class="team-number">TEAM MEMBER 02</span><h4>Concepcion, Denyel Ajlie, D.</h4><p>DovExpress Team</p></div>
+          <div class="team-member"><span class="team-number">TEAM MEMBER 03</span><h4>Naval, Jayverson, M.</h4><p>DovExpress Team</p></div>
+          <div class="team-member"><span class="team-number">TEAM MEMBER 04</span><h4>Licauco, Nic Lorenz, V.</h4><p>DovExpress Team</p></div>
+          <div class="team-member"><span class="team-number">TEAM MEMBER 05</span><h4>Urbiztondo, Justine Paul, T.</h4><p>DovExpress Team</p></div>
+          <div class="team-member"><span class="team-number">TEAM MEMBER 06</span><h4>Co, Rylan</h4><p>DovExpress Team</p></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="contact section-pad" id="contact">
+      <div class="section-topline light"><span>05 / CONTACT US</span><span>We’d love to hear from you</span></div>
+      <div class="contact-grid"><div><p class="eyebrow">HAVE A QUESTION?</p><h2>Let’s make<br><em>it a trip.</em></h2><p class="contact-intro">Whether you have a destination in mind or just want to start exploring, say hello. We’ll take it from there.</p><button type="button" class="button button-yellow" id="open-inquiry-btn" data-contact-modal="inquiry">Send an inquiry <span>↗</span></button></div>
+        <div class="contact-options"><a href="#contact" class="contact-row" id="contact-faq-link" data-contact-modal="faq"><span class="contact-icon">?</span><span><small>NEED A QUICK ANSWER?</small><strong>Frequently asked questions</strong></span><b>↗</b></a><a href="#contact" class="contact-row" id="contact-office-link" data-contact-modal="office"><span class="contact-icon">⌖</span><span><small>COME SAY HELLO</small><strong>Office location</strong></span><b>↗</b></a><a href="#contact" class="contact-row" id="contact-inquiry-link" data-contact-modal="inquiry"><span class="contact-icon">✉</span><span><small>START A CONVERSATION</small><strong>Send an inquiry</strong></span><b>↗</b></a></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer"><a class="brand" href="#home"><span class="brand-mark">d</span><span>Dov<span class="brand-light">Express</span></span></a><p>Find your somewhere.</p><span class="copyright">© 2026 DovExpress. All journeys welcome.</span></footer>
+
+  <!-- IN-PAGE CONTACT / FAQ / OFFICE MODAL -->
+  <div class="dov-modal-backdrop" id="contact-modal-backdrop" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+    <div class="dov-modal">
+      <button type="button" class="dov-modal-close" id="close-modal-btn" aria-label="Close modal">✕</button>
+      <span class="mini-label" id="contact-modal-tag">DOVEXPRESS CONCIERGE</span>
+      <h3 style="font:600 1.6rem var(--serif);margin:6px 0 14px;" id="contact-modal-title">Send an Inquiry</h3>
+      <div id="contact-modal-body"></div>
+    </div>
+  </div>
+
+  <!-- TOAST NOTIFICATION -->
+  <div class="dov-toast" id="dov-toast" role="status" aria-live="polite">Trip updated!</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
